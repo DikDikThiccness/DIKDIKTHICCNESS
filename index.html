@@ -1,94 +1,270 @@
+
 <html><head>
-      <!-- Preload hover images to avoid first-time delay -->
-      <link rel="preload" href="play hover.avif" as="image">
-      <link rel="preload" href="pause hover.avif" as="image">
-      <link rel="preload" href="skip hover.avif" as="image">
-      <link rel="preload" href="mute hover.avif" as="image">
-      <link rel="preload" href="sdds2ds.avif" as="image">
+  <!-- Preload hover images to avoid first-time delay -->
+  <link rel="preload" href="play hover.avif" as="image">
+  <link rel="preload" href="pause hover.avif" as="image">
+  <link rel="preload" href="skip hover.avif" as="image">
+  <link rel="preload" href="mute hover.avif" as="image">
+  <link rel="preload" href="sdds2ds.avif" as="image">
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>DIK•DIK•THICCNESS Bitcoin Rune</title>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.avif">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.avif">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.avif">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="DIK•DIK•THICCNESS" />
+  <meta property="og:description" content="first he's dik dik, then he's thiccness 🍑🦌 
+  only on ₿TC runes." />
+  <meta property="og:image" content="DIK-DIK-CAN-LEAP.avif" />
+  <meta name="twitter:card" content="DIK-DIK-CAN-LEAP.avif" />
+  <meta name="twitter:site" content="https://x.com/DIKDIKTHICCNESS" />
+  <meta name="twitter:title" content="DIK•DIK•THICCNESS" />
+  <meta name="twitter:description" content="first he's dik dik, then he's thiccness 🍑🦌 
+
+  only on ₿TC runes." />
+  <meta name="twitter:image" content="DIK-DIK-CAN-LEAP.avif" />
+
+</head>
+<body>
+
+  <div id="loadingOverlay">Loading...</div>
+  <div id="blurredBackground"></div>
+    <div class="blur-overlay" id="blurOverlay">
+        <img src="clickme2.gif" alt="Click Me" id="clickImage" class="allow-select" preload="true">
+    </div>
   
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-    <title>DIK•DIK•THICCNESS Bitcoin Rune</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-      <link rel="icon" href="favicon.ico">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.avif">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.avif">
-      <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.avif">
-      <link rel="icon" type="image/svg+xml" href="favicon.svg">
-      <meta property="og:title" content="DIK•DIK•THICCNESS" />
-      <meta property="og:description" content="first he's dik dik, then he's thiccness 🍑🦌 
-      only on ₿TC runes." />
-      <meta property="og:image" content="DIK-DIK-CAN-LEAP.avif" />
-      <meta name="twitter:card" content="DIK-DIK-CAN-LEAP.avif" />
-      <meta name="twitter:site" content="https://x.com/DIKDIKTHICCNESS" />
-      <meta name="twitter:title" content="DIK•DIK•THICCNESS" />
-      <meta name="twitter:description" content="first he's dik dik, then he's thiccness 🍑🦌 
+    <div class="window-container">
+<img src="botlogo.png" alt="" width="150px" draggable="false">
+<H1 style="text-decoration: underline;"> DIK DIK RUNES BOT</H1>
+      <h2>Discord and Telegram bots now available. Get valuable rune insights and more! 🤯</h2>
+      <p>Credit to <a href="https://x.com/coffeeweed_eth" target="_blank">@coffeeweed_eth</p></a>
+      <h2>Add the bot to:</h2>
+      <div class="image-links">
+      <a href="https://discord.com/oauth2/authorize?client_id=1297367645548445747" target="_blank"><img src="dc2.png" class="icon"> </a>
+      <a href="https://t.me/RunesRickBot" target="_blank"><img src="tg2.png" class="icon">  </a>
+    </div>
+    </div>
 
-      only on ₿TC runes." />
-      <meta name="twitter:image" content="DIK-DIK-CAN-LEAP.avif" />
- 
-    </head>
-    <body>
 
-      <div id="loadingOverlay">Loading...</div>
-      <div id="blurredBackground"></div>
-        <div class="blur-overlay" id="blurOverlay">
-            <img src="clickme2.gif" alt="Click Me" id="clickImage" class="allow-select" preload="true">
-        </div>
-      
+    <script>
+      // Function to make an element draggable
+      function makeElementDraggable(elmnt) {
+        let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "-header")) {
+          // If present, the header is where you move the DIV from
+          document.getElementById(elmnt.id + "-header").onmousedown = dragMouseDown;
+        } else {
+          // Otherwise, move the DIV from anywhere inside the DIV
+          elmnt.onmousedown = dragMouseDown;
+        }
     
-      <div class="container">
-        <div class="content mainContent">
-          <img src="logo.avif" alt="Minimalist dik-dik logo" class="logo" draggable="false">
-          <h1>DIK•DIK•THICCNESS</h1>
-          <p>Welcome to the savanna realm of the DIK•DIK•THICCNESS Bitcoin rune!</p>
-          <p>first he's dik dik, then he's thiccness 🍑🦌</p>
-          <div style="align-items: center;">
-            <p>fade dik dik, get hit with the blik blik</p>
-            <img src="dik dik with blik blik png.avif" alt="image" style="width: 100px; height: 100px; margin-left: 10px;">
-          </div>
-          <div class="icon-buttons">
-            <a href="https://magiceden.us/runes/DIK%E2%80%A2DIK%E2%80%A2THICCNESS" class="icon-button" target="_blank">
-                <img src="me2.avif"  draggable="false">
-            </a>
-            <a href="https://x.com/dikdikthiccness" class="icon-button" target="_blank">
-                <img src="x2.avif"  draggable="false">
-            </a>
-            <a href="https://t.me/dikdikthic" class="icon-button" target="_blank">
-                <img src="tele2.avif" draggable="false">
-            </a>
-        </div>
-        </div>
+        function dragMouseDown(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // Get the mouse cursor position at startup:
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          document.onmouseup = closeDragElement;
+          // Call a function whenever the cursor moves:
+          document.onmousemove = elementDrag;
+        }
+    
+        function elementDrag(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // Calculate the new cursor position:
+          pos1 = pos3 - e.clientX;
+          pos2 = pos4 - e.clientY;
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          // Set the element's new position:
+          elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+          elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+    
+        function closeDragElement() {
+          // Stop moving when mouse button is released:
+          document.onmouseup = null;
+          document.onmousemove = null;
+        }
+      }
+    
+      // Call the function on the window-container
+      window.onload = function() {
+        makeElementDraggable(document.querySelector('.window-container'));
+      };
+    </script>
+    
+
+  <div class="container">
+    <div class="content mainContent">
+      <img src="logo.avif" alt="Minimalist dik-dik logo" class="logo" draggable="false">
+      <h1>DIK•DIK•THICCNESS</h1>
+      <p>Welcome to the savanna realm of the DIK•DIK•THICCNESS Bitcoin rune!</p>
+      <p>first he's dik dik, then he's thiccness 🍑🦌</p>
+      <div style="align-items: center;">
+        <p>fade dik dik, get hit with the blik blik</p>
+        <img src="dik dik with blik blik png.avif" alt="image" style="width: 100px; height: 100px; margin-left: 10px;">
       </div>
-<style>html {
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none;
-   -khtml-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none; 
-          user-select: none; 
+      <div class="icon-buttons">
+        <a href="https://magiceden.us/runes/DIK%E2%80%A2DIK%E2%80%A2THICCNESS" class="icon-button" target="_blank">
+            <img src="me2.avif"  draggable="false">
+        </a>
+        <a href="https://x.com/dikdikthiccness" class="icon-button" target="_blank">
+            <img src="x2.avif"  draggable="false">
+        </a>
+        <a href="https://t.me/dikdikthic" class="icon-button" target="_blank">
+            <img src="tele2.avif" draggable="false">
+        </a>
+    </div>
+    </div>
+  </div>
+<style>
+
+/* Adjustments for mobile screens */
+@media only screen and (max-width: 2300px) {
+  .window-container {
+    transform: scale(0.7); /* Scale down by 50% */
+    transform-origin: top left; /* Anchor the scale transformation to the top-left corner */
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    left: 5%; /* Center it horizontally */
+    top: 20px; /* Reduce the top margin on mobile */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .window-container h1 {
+    font-size: 1.2rem; /* Adjust title size */
+  }
+
+  .window-container h2 {
+    font-size: 1rem; /* Adjust subtitle size */
+  }
+
+  .window-container p {
+    font-size: .8rem; /* Adjust paragraph size */
+  }
+
+  .window-container .image-links img {
+    width: 60px;  /* Adjust image size */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+ 
+  .window-container {
+    transform: scale(0.4); /* Scale down by 50% */
+    transform-origin: top left; /* Anchor the scale transformation to the top-left corner */
+    width: 95%;
+    padding: 15px;
+    left: 1%;
+    display: none;
+    top: 10px;
+  }
+
+  .window-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .window-container h2 {
+    font-size: 1rem;
+  }
+
+  .window-container p {
+    font-size: 0.9rem;
+  }
+
+  .window-container .image-links img {
+    width: 50px;
+  }
+}
+.window-container {
+  background-image: url('bot-window2.png'); 
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 700px;
+  padding: 45px;
+  color: white;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 3;
+  cursor: move;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+    .window-container a {
+      text-decoration: none;
+      color: #ffe1b4 ;
+    }
+
+    /* Flexbox container for images */
+    .window-container .image-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px; /* Optional: Adds some space between the images */
+
+    }
+
+    /* Ensure images maintain size */
+    .window-container .image-links img {
+      width: 80px;  /* Adjust size to fit the window */
+      height: auto; 
+      transition: transform 0.3s ease; /* Smooth hover scaling */
+    }
+
+    /* Hover effect */
+    .image-links img:hover {
+      transform: scale(1.1); /* Scale up the image on hover */
+    }
+
+html {
+-webkit-touch-callout: none; 
+-webkit-user-select: none;
+-khtml-user-select: none;
+ -moz-user-select: none;
+  -ms-user-select: none; 
+      user-select: none; 
 }
 
 
 /* mobile */
 @media only screen and (max-width: 1900px) {
+  .window-container {
+    transform: scale(0.6); /* Scale down by 50% */
+  }
   .container {
+ max-width: 75%;
+min-height: 1100px;
+  min-width: 580px;
+}
+.content {
+max-width: 70%; 
 
-      width: 85%;
-min-height: 1000px;
-      min-width: 580px;
-  }
-  .content {
-    max-width: 70%; 
-
-  }
-
+}
 
 
-  #slideshow-container {
-      width: 250px;  /* 50% of 500px */
-      height: 300px; /* 50% of 600px */
-      position: absolute;
+
+#slideshow-container {
+  width: 250px;  /* 50% of 500px */
+  height: 300px; /* 50% of 600px */
+  position: absolute;
 top: 20px;
 right: 20px;
 background-color: transparent;
@@ -97,14 +273,14 @@ cursor: move;
 display: flex; /* Enable Flexbox */
 justify-content: center; /* Center horizontally */
 align-items: center; /* Center vertically */
-      }
-
-  #slideshow {
-    width: 237.5px; /* 50% of 475px */
-    height: 285px;  /* 50% of 570px */
-    position: relative; /* Add this line */
-  background-color: rgb(24, 24, 24);
   }
+
+#slideshow {
+width: 237.5px; /* 50% of 475px */
+height: 285px;  /* 50% of 570px */
+position: relative; /* Add this line */
+background-color: rgb(24, 24, 24);
+}
 }
 
 
@@ -114,6 +290,7 @@ align-items: center; /* Center vertically */
 
 /* desktop */
 @media only screen and (min-width: 1901px) {
+
 .container {
 min-height: 1050px;
 width: 45%;
@@ -122,22 +299,22 @@ width: 45%;
 max-width: 80%;
 }
 
-  
-  #slideshow-container {
-      width: 500px;  /* 50% of 500px */
-      height: 600px; /* 50% of 600px */
-  }
-  #slideshow {
-    width: 475px; /* 50% of 475px */
-    height: 570px;  /* 50% of 570px */
-  }
+
+#slideshow-container {
+  width: 500px;  /* 50% of 500px */
+  height: 600px; /* 50% of 600px */
+}
+#slideshow {
+width: 475px; /* 50% of 475px */
+height: 570px;  /* 50% of 570px */
+}
 }
 
 
 
 
 #slideshow-container {
-  position: absolute;
+position: absolute;
 top: 20px;
 right: 20px;
 
@@ -147,154 +324,154 @@ cursor: move;
 display: flex; /* Enable Flexbox */
 justify-content: center; /* Center horizontally */
 align-items: center; /* Center vertically */
-      }
+  }
 
 
-      #slideshow {
-  position: relative; /* Add this line */
-  background-color: rgb(24, 24, 24);
+  #slideshow {
+position: relative; /* Add this line */
+background-color: rgb(24, 24, 24);
 }
 
 
 #slideshow img {
-  position: absolute;
-  top: 0; /* Add this line */
-  left: 0; /* Add this line */
-  width: 100%; /* Change from 95% to 100% */
-  height: 100%; /* Change from 95% to 100% */
-  object-fit: contain;
-  transition: opacity 1s ease-in-out;
+position: absolute;
+top: 0; /* Add this line */
+left: 0; /* Add this line */
+width: 100%; /* Change from 95% to 100% */
+height: 100%; /* Change from 95% to 100% */
+object-fit: contain;
+transition: opacity 1s ease-in-out;
 }
 
 
-      /* Hide all images except the first one */
-      #slideshow img:not(:first-child) {
-          opacity: 0;
-      }
+  /* Hide all images except the first one */
+  #slideshow img:not(:first-child) {
+      opacity: 0;
+  }
 
-      /* Border Overlay */
-      #border-overlay {
-          position: absolute;
+  /* Border Overlay */
+  #border-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('border.avif');
+      background-size: 100% 100%;
+      cursor: move;
+      z-index: 2;
+  }
+
+  /* Draggable cursor */
+  .draggable {
+      cursor: move;
+  }
+
+    /* Blur content and overlay, without affecting layout */
+    #loadingOverlay {
+          position: fixed;
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: url('border.avif');
-          background-size: 100% 100%;
-          cursor: move;
-          z-index: 2;
+          background-color: #000;
+          z-index: 9999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 24px;
+          font-family: 'Bungee', cursive;
       }
 
-      /* Draggable cursor */
-      .draggable {
-          cursor: move;
+      /* Hide the main content initially */
+      #mainContent {
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
       }
 
-        /* Blur content and overlay, without affecting layout */
-        #loadingOverlay {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: #000;
-              z-index: 9999;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #fff;
-              font-size: 24px;
-              font-family: 'Bungee', cursive;
-          }
-  
-          /* Hide the main content initially */
-          #mainContent {
-              opacity: 0;
-              transition: opacity 0.5s ease-in-out;
-          }
-  
-          #blurredBackground {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-image: url('enjoy-the-sunrise.avif'); /* Replace with your actual background image */
-              background-size: cover;
-              background-position: center;
-              filter: blur(10px);
-              z-index: 5;
-              transition: opacity 0.5s ease-in-out;
-          }
-  
-          .blur-overlay {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.5);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 6;
-              transition: opacity 0.5s ease-in-out;
-          }
-  
-          .blur-overlay img {
-              width: 200px;
-              cursor: pointer;
-          }
-  
-          .hidden {
-              opacity: 0;
-              pointer-events: none;
-          }
-  
-  
-          .allow-select {
+      #blurredBackground {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('enjoy-the-sunrise.avif'); /* Replace with your actual background image */
+          background-size: cover;
+          background-position: center;
+          filter: blur(10px);
+          z-index: 5;
+          transition: opacity 0.5s ease-in-out;
+      }
+
+      .blur-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 6;
+          transition: opacity 0.5s ease-in-out;
+      }
+
+      .blur-overlay img {
+          width: 200px;
+          cursor: pointer;
+      }
+
+      .hidden {
+          opacity: 0;
+          pointer-events: none;
+      }
+
+
+      .allow-select {
 user-select: text;
 -webkit-user-select: text;
 -moz-user-select: text;
 -ms-user-select: text;
 }
-  
-    body {
 
-      font-family: 'Bungee', cursive;
-      background-image: url('enjoy-the-sunrise.avif');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      color: #ffffff;
-      image-rendering: -webkit-optimize-contrast;
-      scrollbar-width: thin;
-      scrollbar-color: orange #000000;
-      image-rendering: crisp-edges;
-    }
+body {
+
+  font-family: 'Bungee', cursive;
+  background-image: url('enjoy-the-sunrise.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ffffff;
+  image-rendering: -webkit-optimize-contrast;
+  scrollbar-width: thin;
+  scrollbar-color: orange #000000;
+  image-rendering: crisp-edges;
+}
 
 
-    body::-webkit-scrollbar {
-      width: 12px;
-  }
+body::-webkit-scrollbar {
+  width: 12px;
+}
 
-  body::-webkit-scrollbar-track {
-      background: #000000;
-  }
+body::-webkit-scrollbar-track {
+  background: #000000;
+}
 
-  body::-webkit-scrollbar-thumb {
-      background-color: orange;
-      border-radius: 6px;
-      border: 3px solid #494949;
-  }
-  /* Width of the scrollbar */
+body::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 6px;
+  border: 3px solid #494949;
+}
+/* Width of the scrollbar */
 ::-webkit-scrollbar {
 width: 12px;
 }
@@ -311,145 +488,145 @@ border-radius: 6px;       /* Rounded corners */
 border: 3px solid #000000; /* Optional: Adds a border around the handle */
 }
 
-    .container {
-      text-align: center;
-      background-image: url('body2.avif');
-      background-size: 100% 100%; /* Ensures the image covers the entire container */
-      background-position: center;
-      background-repeat: no-repeat;
-      box-sizing: border-box;
+.container {
+  text-align: center;
+  background-image: url('body2.avif');
+  background-size: 100% 100%; /* Ensures the image covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-      padding: 1rem; /* Adds padding to keep text inside */
-      position: relative;
-      max-width: 100%; /* Ensures the container doesn't overflow */
-      max-height: 100vh; /* Ensures the container is within the view height */
-    }
+  padding: 1rem; /* Adds padding to keep text inside */
+  position: relative;
+  max-width: 100%; /* Ensures the container doesn't overflow */
+  max-height: 100vh; /* Ensures the container is within the view height */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  word-wrap: break-word; 
+}
+
+
+
+.logo {
+  width:200px;
+  aspect-ratio: 1/1;
+  height: auto; 
+  margin-bottom: 1rem;
+  padding-top: 25px;
   
-    .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-      word-wrap: break-word; 
-    }
-  
-  
-  
-    .logo {
-      width:200px;
-      aspect-ratio: 1/1;
-      height: auto; 
-      margin-bottom: 1rem;
-      padding-top: 25px;
-      
-    }
-    h1 {
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      font-size: 2.5rem;
-    }
-    p {
-      font-size: 1.38rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    }
-    .music-player-wrapper {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 461.71px;  /* 20% larger than 384.76px */
-  height: 153.91px;  /* 20% larger than 128.26px */
-  cursor: default;
-  padding: 15.84px;  /* Slightly adjusted for larger size */
+}
+.mainContent h1 {
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
+.mainContent p {
+  font-size: 1.38rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.music-player-wrapper {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 461.71px;  /* 20% larger than 384.76px */
+height: 153.91px;  /* 20% larger than 128.26px */
+cursor: default;
+padding: 15.84px;  /* Slightly adjusted for larger size */
 }
 
 .music-player {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url('sdds2ds.avif'); /* Default player image */
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-image 0.3s ease-in-out; /* Smooth transition */
+position: relative;
+width: 100%;
+height: 100%;
+background-image: url('sdds2ds.avif'); /* Default player image */
+background-size: cover;
+background-repeat: no-repeat;
+transition: background-image 0.3s ease-in-out; /* Smooth transition */
 }
 
 .button {
-  position: absolute;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+position: absolute;
+background: transparent;
+border: none;
+cursor: pointer;
 }
 
 /* Adjust button sizes (scaled by another 20%) */
 #play-btn {
-  left: 19.5px;
-  top: 27px;
-  width: 60px; /* 20% larger */
-  height: 89.1px; /* 20% larger */
+left: 19.5px;
+top: 27px;
+width: 60px; /* 20% larger */
+height: 89.1px; /* 20% larger */
 }
 
 #pause-btn {
-  left: 94.5px;
-  top: 27px;
-  width: 45px; /* 20% larger */
-  height: 89.1px; /* 20% larger */
+left: 94.5px;
+top: 27px;
+width: 45px; /* 20% larger */
+height: 89.1px; /* 20% larger */
 }
 
 #skip-btn {
-  left: 168.4px;
-  top: 27px;
-  width: 67.5px; /* 20% larger */
-  height: 89.1px; /* 20% larger */
+left: 168.4px;
+top: 27px;
+width: 67.5px; /* 20% larger */
+height: 89.1px; /* 20% larger */
 }
 
 #mute-btn {
-  left: 260.32px;
-  top: 27px;
-  width: 81px; /* 20% larger */
-  height: 89.1px; /* 20% larger */
+left: 260.32px;
+top: 27px;
+width: 81px; /* 20% larger */
+height: 89.1px; /* 20% larger */
 }
 
 /* Volume slider (scaled by another 20%) */
 #volume-slider {
-  left: 343.6px;
-  top: 67.5px;
-  width: 98px; /* Increased width for usability */
-  height: 14.4px;  /* Slightly larger for usability */
-  position: absolute;
-  -webkit-appearance: none;
-  appearance: none;
-  background: #000;
-  border-radius: 7.2px;
-  outline: none;
-  box-sizing: border-box;
+left: 343.6px;
+top: 67.5px;
+width: 98px; /* Increased width for usability */
+height: 14.4px;  /* Slightly larger for usability */
+position: absolute;
+-webkit-appearance: none;
+appearance: none;
+background: #000;
+border-radius: 7.2px;
+outline: none;
+box-sizing: border-box;
 }
 
 /* Custom thumb using PNG icon */
 #volume-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 40px; /* Increased thumb size for visibility */
-  height: 40px;
-  background: url('logo.png') no-repeat center;
-  background-size: cover;
-  cursor: pointer;
-  border: none;
+-webkit-appearance: none;
+appearance: none;
+width: 40px; /* Increased thumb size for visibility */
+height: 40px;
+background: url('logo.png') no-repeat center;
+background-size: cover;
+cursor: pointer;
+border: none;
 }
 
 #volume-slider::-moz-range-thumb {
-  width: 36px;
-  height: 36px;
-  background: url('logo.png') no-repeat center;
-  background-size: cover;
-  cursor: pointer;
-  border: none;
+width: 36px;
+height: 36px;
+background: url('logo.png') no-repeat center;
+background-size: cover;
+cursor: pointer;
+border: none;
 }
 
 
@@ -457,348 +634,348 @@ border: 3px solid #000000; /* Optional: Adds a border around the handle */
 
 
 
-    .icon-buttons {
-              display: flex;
-              justify-content: center;
-              gap: 25px;
-              margin-top: 2rem;
-              padding-bottom: 25px;
-              padding-top: 25px;
-          }
-  
-          .icon-button {
-              width: 100px;
-              height: 100px;
-              border-radius: 20%;
-              background-color: #000000;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              cursor: pointer;
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
-          }
-  
-          .icon-button:hover {
-              background-color: #202020;
-          }
-  
-          .icon-button img {
-  
-              width: 75px;
-              height: 75px;
-              object-fit: contain;
-          }</style>
-      
-      <div id="slideshow-container">
-        <!-- Slideshow Div -->
-        <div id="slideshow">
-            <!-- Slideshow Images -->
-            <img src="uwu-thiccness.avif" alt="Meme 1">
-            <img src="billion-dollar-dik-dik.avif" alt="Meme 2">
-            <img src="btc maxi.avif" alt="Meme 3">
-            <img src="dik-dik-frolicking.gif" alt="Meme 4">
-            <img src="dik-dik-asian-cat-graphic.gif" alt="Meme 5">
-            <img src="dik-dik-a-rising-tide.avif" alt="Meme 6">
-            <img src="dik-dik-hypnotized.gif" alt="Meme 7">
-            <img src="DIK-DIK-GANG.avif" alt="Meme 8">
-            <img src="dik-dik-leap-of-faith.gif" alt="Meme 9">
-            <img src="dik-dik-many-heads-graphic.avif" alt="Meme 10">
-            <img src="dik-dik-thiccness-airlines.avif" alt="Meme 11">
-            <img src="dik-dik-savior.avif" alt="Meme 12">
-            <img src="dik-dik-rocket-to-moon.avif" alt="Meme 13">
-            <img src="dik-dik-stoner-mode.avif" alt="Meme 14">
-            <img src="DIK-DIK-THICCNESS-UP-CLOSE.avif" alt="Meme 15">
-            <img src="fade-dik-dik-catch-the-blik-blik.avif" alt="Meme 16">
-            <img src="double-cup-dik-dik.avif" alt="Meme 17">
-            <img src="dik-dik-with-the-blick-blick.avif" alt="Meme 18">
-            <img src="dik-dik-war-on-jeets.avif" alt="Meme 19">
-            <!-- Video Slide -->
-            <img src="pfp.avif" alt="Meme 21">
-            <img src="thicc hundo.avif" alt="Meme 22">
-            <img src="whales-of-mass-destruction.avif" alt="Meme 23">
-            <!-- Add more images as needed -->
-        </div>
+.icon-buttons {
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+          margin-top: 2rem;
+          padding-bottom: 25px;
+          padding-top: 25px;
+      }
 
-        <!-- Border Overlay (used as drag handle) -->
-        <div id="border-overlay" class="draggable"></div>
+      .icon-button {
+          width: 100px;
+          height: 100px;
+          border-radius: 20%;
+          background-color: #000000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .icon-button:hover {
+          background-color: #202020;
+      }
+
+      .icon-button img {
+
+          width: 75px;
+          height: 75px;
+          object-fit: contain;
+      }</style>
+  
+  <div id="slideshow-container">
+    <!-- Slideshow Div -->
+    <div id="slideshow">
+        <!-- Slideshow Images -->
+        <img src="uwu-thiccness.avif" alt="Meme 1">
+        <img src="billion-dollar-dik-dik.avif" alt="Meme 2">
+        <img src="btc maxi.avif" alt="Meme 3">
+        <img src="dik-dik-frolicking.gif" alt="Meme 4">
+        <img src="dik-dik-asian-cat-graphic.gif" alt="Meme 5">
+        <img src="dik-dik-a-rising-tide.avif" alt="Meme 6">
+        <img src="dik-dik-hypnotized.gif" alt="Meme 7">
+        <img src="DIK-DIK-GANG.avif" alt="Meme 8">
+        <img src="dik-dik-leap-of-faith.gif" alt="Meme 9">
+        <img src="dik-dik-many-heads-graphic.avif" alt="Meme 10">
+        <img src="dik-dik-thiccness-airlines.avif" alt="Meme 11">
+        <img src="dik-dik-savior.avif" alt="Meme 12">
+        <img src="dik-dik-rocket-to-moon.avif" alt="Meme 13">
+        <img src="dik-dik-stoner-mode.avif" alt="Meme 14">
+        <img src="DIK-DIK-THICCNESS-UP-CLOSE.avif" alt="Meme 15">
+        <img src="fade-dik-dik-catch-the-blik-blik.avif" alt="Meme 16">
+        <img src="double-cup-dik-dik.avif" alt="Meme 17">
+        <img src="dik-dik-with-the-blick-blick.avif" alt="Meme 18">
+        <img src="dik-dik-war-on-jeets.avif" alt="Meme 19">
+        <!-- Video Slide -->
+        <img src="pfp.avif" alt="Meme 21">
+        <img src="thicc hundo.avif" alt="Meme 22">
+        <img src="whales-of-mass-destruction.avif" alt="Meme 23">
+        <!-- Add more images as needed -->
     </div>
-    <div class="music-player-wrapper" id="music-player-wrapper">
-      <!-- Music player div -->
-      <div class="music-player" id="music-player">
-          <button id="play-btn" class="button"></button>
-          <button id="pause-btn" class="button"></button>
-          <button id="skip-btn" class="button"></button>
-          <button id="mute-btn" class="button"></button>
-          <input type="range" id="volume-slider" class="button" min="0" max="1" step="0.01" value="0.2">
-      </div>
+
+    <!-- Border Overlay (used as drag handle) -->
+    <div id="border-overlay" class="draggable"></div>
+</div>
+<div class="music-player-wrapper" id="music-player-wrapper">
+  <!-- Music player div -->
+  <div class="music-player" id="music-player">
+      <button id="play-btn" class="button"></button>
+      <button id="pause-btn" class="button"></button>
+      <button id="skip-btn" class="button"></button>
+      <button id="mute-btn" class="button"></button>
+      <input type="range" id="volume-slider" class="button" min="0" max="1" step="0.01" value="0.2">
   </div>
+</div>
 
-  <audio id="audio-player"></audio>
+<audio id="audio-player"></audio>
 
-  <script>
-    const audioPlayer = document.getElementById('audio-player');
-    const playBtn = document.getElementById('play-btn');
-    const pauseBtn = document.getElementById('pause-btn');
-    const skipBtn = document.getElementById('skip-btn');
-    const muteBtn = document.getElementById('mute-btn');
-    const volumeControl = document.getElementById('volume-slider');
-    const musicPlayerWrapper = document.getElementById('music-player-wrapper');
-    const musicPlayer = document.getElementById('music-player');
+<script>
+const audioPlayer = document.getElementById('audio-player');
+const playBtn = document.getElementById('play-btn');
+const pauseBtn = document.getElementById('pause-btn');
+const skipBtn = document.getElementById('skip-btn');
+const muteBtn = document.getElementById('mute-btn');
+const volumeControl = document.getElementById('volume-slider');
+const musicPlayerWrapper = document.getElementById('music-player-wrapper');
+const musicPlayer = document.getElementById('music-player');
 
-    let isMuted = false;
+let isMuted = false;
 
-    const tracks = [
-        'dikdiktheme.mp3',
-        'music.mp3',
-        
-    ];
-
-    let currentTrackIndex = 0; // Start with the first track in the playlist
-
-    // Load the first track in the playlist when the page loads
-    window.addEventListener('load', () => {
-        audioPlayer.src = tracks[currentTrackIndex];
-        audioPlayer.volume = 0.3; // Set volume to 20%
-        volumeControl.value = 0.3; // Sync the volume slider to 20%
-    });
-
-    // Hover effects for buttons
-    playBtn.addEventListener('mouseover', () => {
-        musicPlayer.style.backgroundImage = "url('play hover.avif')";
-    });
-    playBtn.addEventListener('mouseout', () => {
-        musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
-    });
-
-    pauseBtn.addEventListener('mouseover', () => {
-        musicPlayer.style.backgroundImage = "url('pause hover.avif')";
-    });
-    pauseBtn.addEventListener('mouseout', () => {
-        musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
-    });
-
-    skipBtn.addEventListener('mouseover', () => {
-        musicPlayer.style.backgroundImage = "url('skip hover.avif')";
-    });
-    skipBtn.addEventListener('mouseout', () => {
-        musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
-    });
-
-    muteBtn.addEventListener('mouseover', () => {
-        musicPlayer.style.backgroundImage = "url('mute hover.avif')";
-    });
-    muteBtn.addEventListener('mouseout', () => {
-        musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
-    });
-
-    // Mute functionality
-    muteBtn.addEventListener('click', () => {
-        audioPlayer.muted = !audioPlayer.muted;
-        isMuted = !isMuted;
-    });
-
-    // Volume control
-    volumeControl.addEventListener('input', (e) => {
-        audioPlayer.volume = e.target.value;
-    });
-
-    // Play functionality
-    playBtn.addEventListener('click', () => {
-        audioPlayer.play().catch(error => {
-            console.error('Playback error:', error);
-        });
-    });
-
-    // Pause functionality
-    pauseBtn.addEventListener('click', () => {
-        audioPlayer.pause();
-    });
-
-    // Skip functionality to move to the next track
-    skipBtn.addEventListener('click', () => {
-        currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-        audioPlayer.src = tracks[currentTrackIndex];
-        audioPlayer.play().catch(error => {
-            console.error('Playback error:', error);
-        });
-    });
-
-    // Event listener for when the current track ends
-    audioPlayer.addEventListener('ended', () => {
-        // Advance to the next track
-        currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-        audioPlayer.src = tracks[currentTrackIndex];
-        audioPlayer.play().catch(error => {
-            console.error('Playback error:', error);
-        });
-    });
-</script>
-    <script>
-        // Existing JavaScript code
-
-        // Slideshow Functionality
-        const slideshowImages = document.querySelectorAll('#slideshow img');
-        let currentSlide = 0;
-        const totalSlides = slideshowImages.length;
-
-        function showNextSlide() {
-            // Hide current slide
-            slideshowImages[currentSlide].style.opacity = 0;
-
-            // Increment slide index
-            currentSlide = (currentSlide + 1) % totalSlides;
-
-            // Show next slide
-            slideshowImages[currentSlide].style.opacity = 1;
-        }
-
-        // Start the slideshow
-        setInterval(showNextSlide, 5000); // Change image every 5 seconds
-
-        // Draggable Functionality for Slideshow Window
-        const slideshowContainer = document.getElementById('slideshow-container');
-        const borderOverlay = document.getElementById('border-overlay');
-        let isDraggingSlideshow = false;
-        let startX, startY, initialX, initialY;
-
-        borderOverlay.addEventListener('mousedown', (e) => {
-            isDraggingSlideshow = true;
-            startX = e.clientX;
-            startY = e.clientY;
-            initialX = slideshowContainer.offsetLeft;
-            initialY = slideshowContainer.offsetTop;
-        });
-
-        document.addEventListener('mousemove', (e) => {
-            if (isDraggingSlideshow) {
-                let dx = e.clientX - startX;
-                let dy = e.clientY - startY;
-                slideshowContainer.style.left = (initialX + dx) + 'px';
-                slideshowContainer.style.top = (initialY + dy) + 'px';
-            }
-        });
-
-        document.addEventListener('mouseup', () => {
-            isDraggingSlideshow = false;
-        });
-
-        // Ensure the border overlay is on top of the images
-        borderOverlay.style.zIndex = 2;
-        document.getElementById('slideshow').style.zIndex = 1;
-
-        // Preload slideshow images
-        function preloadSlideshowImages() {
-            const imageUrls = [
-            'uwu-thiccness.avif',
-    'billion-dollar-dik-dik.avif',
-    'btc maxi.avif',
-    'dik-dik-frolicking.gif',
-    'dik-dik-asian-cat-graphic.gif',
-    'dik-dik-a-rising-tide.avif',
-    'dik-dik-hypnotized.gif',
-    'DIK-DIK-GANG.avif',
-    'dik-dik-leap-of-faith.gif',
-    'dik-dik-many-heads-graphic.avif',
-    'dik-dik-thiccness-airlines.avif',
-    'dik-dik-savior.avif',
-    'dik-dik-rocket-to-moon.avif',
-    'dik-dik-stoner-mode.avif',
-    'DIK-DIK-THICCNESS-UP-CLOSE.avif',
-    'fade-dik-dik-catch-the-blik-blik.avif',
-    'double-cup-dik-dik.avif',
-    'dik-dik-with-the-blick-blick.avif',
-    'dik-dik-war-on-jeets.avif',
-    // Video Slide (handled separately)
-    'pfp.avif',
-    'thicc hundo.avif',
-    'whales-of-mass-destruction.avif',
-                // Add more image URLs as needed
-            ];
-            imageUrls.forEach(url => {
-                const img = new Image();
-                img.src = url;
-            });
-        }
-
-        preloadSlideshowImages();
-
-        console.log('DIK•DIK•THICCNESS rune thriving in the digital savanna!');
-        
-        // Add a subtle parallax effect to the background
-        document.addEventListener('mousemove', (e) => {
-          const x = e.clientX / window.innerWidth;
-          const y = e.clientY / window.innerHeight;
-          document.body.style.backgroundPosition = `${50 + x * 5}% ${50 + y * 5}%`;
-        });
+const tracks = [
+    'dikdiktheme.mp3',
+    'music.mp3',
     
-        // Adjust container size to match background image aspect ratio
-        function adjustContainerSize() {
-          const container = document.querySelector('.container');
-          const img = new Image();
-          img.src = 'body2.avif';
-          img.onload = function() {
-            const aspectRatio = this.width / this.height;
-            const containerWidth = container.offsetWidth;
-            container.style.height = `${containerWidth / aspectRatio}px`;
-          };
-        }
-    
-        window.addEventListener('load', adjustContainerSize);
-        window.addEventListener('resize', adjustContainerSize);
-    
-        // Function to preload and cache the background images
-        function preloadImages() {
-          const imageUrls = [
-            'border.avif',
-            'body2.avif',
-            'logo.avif',
-            'enjoy-the-sunrise.avif',
-          ];
-          
-          imageUrls.forEach(url => {
-            const img = new Image();
-            img.src = url;
-          });
-        }
-    
-        // Call the preload function when the page loads
-        window.addEventListener('load', preloadImages);
-    
-        function showContent() {
-                document.getElementById('loadingOverlay').style.display = 'none';
-                document.getElementById('mainContent').style.opacity = '1';
-            }
-    
-            // Wait for the page to fully load before removing the loading overlay
-            window.addEventListener('load', function() {
-                // Short delay to ensure everything is rendered
-                setTimeout(showContent, 100);
-            });
-    
-            // ... (keep the rest of the JavaScript from the previous version) ...
-    
-            // Update the click event listener
-document.getElementById('clickImage').addEventListener('click', function() {
-    const blurOverlay = document.getElementById('blurOverlay');
-    const blurredBackground = document.getElementById('blurredBackground');
+];
 
-    // Fade out the blurred background and overlay
-    blurredBackground.classList.add('hidden');
-    blurOverlay.classList.add('hidden');
+let currentTrackIndex = 0; // Start with the first track in the playlist
 
-    // Remove the overlay and blurred background from the DOM after the transition
-    setTimeout(() => {
-        blurredBackground.style.display = 'none';
-        blurOverlay.style.display = 'none';
-    }, 500);
+// Load the first track in the playlist when the page loads
+window.addEventListener('load', () => {
+    audioPlayer.src = tracks[currentTrackIndex];
+    audioPlayer.volume = 0.3; // Set volume to 20%
+    volumeControl.value = 0.3; // Sync the volume slider to 20%
+});
 
-    // Start playing audio
+// Hover effects for buttons
+playBtn.addEventListener('mouseover', () => {
+    musicPlayer.style.backgroundImage = "url('play hover.avif')";
+});
+playBtn.addEventListener('mouseout', () => {
+    musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
+});
+
+pauseBtn.addEventListener('mouseover', () => {
+    musicPlayer.style.backgroundImage = "url('pause hover.avif')";
+});
+pauseBtn.addEventListener('mouseout', () => {
+    musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
+});
+
+skipBtn.addEventListener('mouseover', () => {
+    musicPlayer.style.backgroundImage = "url('skip hover.avif')";
+});
+skipBtn.addEventListener('mouseout', () => {
+    musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
+});
+
+muteBtn.addEventListener('mouseover', () => {
+    musicPlayer.style.backgroundImage = "url('mute hover.avif')";
+});
+muteBtn.addEventListener('mouseout', () => {
+    musicPlayer.style.backgroundImage = "url('sdds2ds.avif')";
+});
+
+// Mute functionality
+muteBtn.addEventListener('click', () => {
+    audioPlayer.muted = !audioPlayer.muted;
+    isMuted = !isMuted;
+});
+
+// Volume control
+volumeControl.addEventListener('input', (e) => {
+    audioPlayer.volume = e.target.value;
+});
+
+// Play functionality
+playBtn.addEventListener('click', () => {
     audioPlayer.play().catch(error => {
         console.error('Playback error:', error);
     });
 });
 
-      </script>
+// Pause functionality
+pauseBtn.addEventListener('click', () => {
+    audioPlayer.pause();
+});
+
+// Skip functionality to move to the next track
+skipBtn.addEventListener('click', () => {
+    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+    audioPlayer.src = tracks[currentTrackIndex];
+    audioPlayer.play().catch(error => {
+        console.error('Playback error:', error);
+    });
+});
+
+// Event listener for when the current track ends
+audioPlayer.addEventListener('ended', () => {
+    // Advance to the next track
+    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+    audioPlayer.src = tracks[currentTrackIndex];
+    audioPlayer.play().catch(error => {
+        console.error('Playback error:', error);
+    });
+});
+</script>
+<script>
+    // Existing JavaScript code
+
+    // Slideshow Functionality
+    const slideshowImages = document.querySelectorAll('#slideshow img');
+    let currentSlide = 0;
+    const totalSlides = slideshowImages.length;
+
+    function showNextSlide() {
+        // Hide current slide
+        slideshowImages[currentSlide].style.opacity = 0;
+
+        // Increment slide index
+        currentSlide = (currentSlide + 1) % totalSlides;
+
+        // Show next slide
+        slideshowImages[currentSlide].style.opacity = 1;
+    }
+
+    // Start the slideshow
+    setInterval(showNextSlide, 5000); // Change image every 5 seconds
+
+    // Draggable Functionality for Slideshow Window
+    const slideshowContainer = document.getElementById('slideshow-container');
+    const borderOverlay = document.getElementById('border-overlay');
+    let isDraggingSlideshow = false;
+    let startX, startY, initialX, initialY;
+
+    borderOverlay.addEventListener('mousedown', (e) => {
+        isDraggingSlideshow = true;
+        startX = e.clientX;
+        startY = e.clientY;
+        initialX = slideshowContainer.offsetLeft;
+        initialY = slideshowContainer.offsetTop;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (isDraggingSlideshow) {
+            let dx = e.clientX - startX;
+            let dy = e.clientY - startY;
+            slideshowContainer.style.left = (initialX + dx) + 'px';
+            slideshowContainer.style.top = (initialY + dy) + 'px';
+        }
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDraggingSlideshow = false;
+    });
+
+    // Ensure the border overlay is on top of the images
+    borderOverlay.style.zIndex = 2;
+    document.getElementById('slideshow').style.zIndex = 1;
+
+    // Preload slideshow images
+    function preloadSlideshowImages() {
+        const imageUrls = [
+        'uwu-thiccness.avif',
+'billion-dollar-dik-dik.avif',
+'btc maxi.avif',
+'dik-dik-frolicking.gif',
+'dik-dik-asian-cat-graphic.gif',
+'dik-dik-a-rising-tide.avif',
+'dik-dik-hypnotized.gif',
+'DIK-DIK-GANG.avif',
+'dik-dik-leap-of-faith.gif',
+'dik-dik-many-heads-graphic.avif',
+'dik-dik-thiccness-airlines.avif',
+'dik-dik-savior.avif',
+'dik-dik-rocket-to-moon.avif',
+'dik-dik-stoner-mode.avif',
+'DIK-DIK-THICCNESS-UP-CLOSE.avif',
+'fade-dik-dik-catch-the-blik-blik.avif',
+'double-cup-dik-dik.avif',
+'dik-dik-with-the-blick-blick.avif',
+'dik-dik-war-on-jeets.avif',
+// Video Slide (handled separately)
+'pfp.avif',
+'thicc hundo.avif',
+'whales-of-mass-destruction.avif',
+            // Add more image URLs as needed
+        ];
+        imageUrls.forEach(url => {
+            const img = new Image();
+            img.src = url;
+        });
+    }
+
+    preloadSlideshowImages();
+
+    console.log('DIK•DIK•THICCNESS rune thriving in the digital savanna!');
+    
+    // Add a subtle parallax effect to the background
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      document.body.style.backgroundPosition = `${50 + x * 5}% ${50 + y * 5}%`;
+    });
+
+    // Adjust container size to match background image aspect ratio
+    function adjustContainerSize() {
+      const container = document.querySelector('.container');
+      const img = new Image();
+      img.src = 'body2.avif';
+      img.onload = function() {
+        const aspectRatio = this.width / this.height;
+        const containerWidth = container.offsetWidth;
+        container.style.height = `${containerWidth / aspectRatio}px`;
+      };
+    }
+
+    window.addEventListener('load', adjustContainerSize);
+    window.addEventListener('resize', adjustContainerSize);
+
+    // Function to preload and cache the background images
+    function preloadImages() {
+      const imageUrls = [
+        'border.avif',
+        'body2.avif',
+        'logo.avif',
+        'enjoy-the-sunrise.avif',
+      ];
       
-    </body>
-    </html>
+      imageUrls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+      });
+    }
+
+    // Call the preload function when the page loads
+    window.addEventListener('load', preloadImages);
+
+    function showContent() {
+            document.getElementById('loadingOverlay').style.display = 'none';
+            document.getElementById('mainContent').style.opacity = '1';
+        }
+
+        // Wait for the page to fully load before removing the loading overlay
+        window.addEventListener('load', function() {
+            // Short delay to ensure everything is rendered
+            setTimeout(showContent, 100);
+        });
+
+        // ... (keep the rest of the JavaScript from the previous version) ...
+
+        // Update the click event listener
+document.getElementById('clickImage').addEventListener('click', function() {
+const blurOverlay = document.getElementById('blurOverlay');
+const blurredBackground = document.getElementById('blurredBackground');
+
+// Fade out the blurred background and overlay
+blurredBackground.classList.add('hidden');
+blurOverlay.classList.add('hidden');
+
+// Remove the overlay and blurred background from the DOM after the transition
+setTimeout(() => {
+    blurredBackground.style.display = 'none';
+    blurOverlay.style.display = 'none';
+}, 500);
+
+// Start playing audio
+audioPlayer.play().catch(error => {
+    console.error('Playback error:', error);
+});
+});
+
+  </script>
+  
+</body>
+</html>
